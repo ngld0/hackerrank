@@ -20,7 +20,8 @@ vector<string> split(const string &);
 - queries[i] is the index of array after rotated k times
 - n = number element of integer aray ;
 - (X + k) % size of X 
--  (X + k%n)%n = queries[i] => X = abs(queries[i] - k%n)%n
+-  (X + k%n)%n = (queries[i] + n)%n => X = (queries[i] - k%n)%n <=> X = (n - k%n + queries[i])
+- X = 
 */
 vector<int> circularArrayRotation(vector<int> a, int k, vector<int> queries) {
     vector<int> ans;
