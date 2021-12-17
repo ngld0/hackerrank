@@ -5,6 +5,7 @@ using namespace std;
 vector<string> split_string(string);
 
 // Complete the jumpingOnClouds function below.
+//jumping-on-the-clouds-revisited
 int jumpingOnClouds(vector<int> c, int k) {
     int i=0, ans=0;
     int n = c.size();
