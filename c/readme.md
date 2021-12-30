@@ -1,5 +1,5 @@
-Generic Pointers/Void Pointer
-========
+# Pointer
+## Generic Pointers/Void Pointer
 - "When a variable is declared as being a pointer to type void, it is known as a generic pointer. 
 Since you cannot have a variable of type void, the pointer will **not point to any data** and therefore cannot be dereferenced. 
 It is still a pointer though, to use it you just have to **cast it to another kind of pointer first**. Hence the term Generic pointer."
@@ -24,8 +24,8 @@ int main()
     return 0;
 }
 ```
-Pointer to Pointer
-=======
+## Pointer to Pointer
+
 ```
 Example 1.
 int x= 5;
@@ -54,3 +54,4 @@ num == *pr2 == **pr1
 &num == pr2 == *pr1
 &pr2 == pr1
 ```
+## pointer to function
