@@ -24,3 +24,20 @@ int main()
     return 0;
 }
 ```
+Pointer to Pointer
+=======
+```
+int num=123;
+/*A normal pointer pr2*/
+int *pr2;
+/*This pointer pr2 is a double pointer*/
+int **pr1;
+/* Assigning the address of variable num to the pointer pr2 */
+pr2 = #
+/*Assigning the address of pointer pr2 to the pointer-to-pointer pr1*/
+pr1 = &pr2;
+Explain:
+num == *pr2 == **pr1
+&num == pr2 == *pr1
+&pr2 == pr1
+```
