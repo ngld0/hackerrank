@@ -55,3 +55,20 @@ num == *pr2 == **pr1
 &pr2 == pr1
 ```
 ## pointer to function
+```
+void add(int a){ // address of a (&a) xxxx; if we call by *a or a[] is is same -> the  value of a in main function will be changed.
+    a += 1;
+}
+int main(){
+    int a =10; //local variable and &a is yyyy difference with address in function add
+    add(a);
+    printf("a=%d",a); // 10
+}
+application's memory
+- Heap 
+- Stack
+- Static/Global 
+- Code (Text)
+
+// Array no call by value, array call by reference -> call function add by array the array will change value if add.
+```
