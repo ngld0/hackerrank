@@ -84,3 +84,49 @@ application's memory
 - realloc() If the dynamically allocated memory is insufficient or more than required, you can change the size of previously allocated memory by using realloc
     - ptr = realloc(ptr, x);
 ``` 
+# Struct, Union
+## Struct
+```
+struct Person {
+  char name[50];
+  int citNo;
+  float salary;
+};
+int main() {
+  struct Person person1, person2, p[20];
+  return 0;
+}
+// We use the typedef keyword to create an alias name for data types. It is commonly used with structures to simplify the syntax of declaring variables.
+typedef struct Distance {
+  int feet;
+  float inch;
+} distances;
+
+int main() {
+  distances d1, d2;
+}
+```
+## union
+```
+A union is a user-defined type similar to structs in C except for one key difference. 
+Structures allocate enough space to store all their members, whereas unions can only hold one member value at a time.
+// 1
+union car
+{
+  char name[50];
+  int price;
+};
+
+int main()
+{
+  union car car1, car2, *car3;
+  return 0;
+}
+// 2
+union car
+{
+  char name[50];
+  int price;
+} car1, car2, *car3;
+
+```
