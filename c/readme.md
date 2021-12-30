@@ -72,3 +72,13 @@ application's memory
 
 // Array no call by value, array call by reference -> call function add by array the array will change value if add.
 ```
+
+## Dynamic Memory Allocation
+- malloc()  stands for memory allocation.
+    - ptr = (castType*) malloc(size); 
+- calloc()  stands for contiguous allocation.
+    - ptr = (castType*)calloc(n, size);
+- free()use to release the space.
+    - free(ptr);
+- realloc() If the dynamically allocated memory is insufficient or more than required, you can change the size of previously allocated memory by using realloc
+    - ptr = realloc(ptr, x);
