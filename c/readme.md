@@ -27,6 +27,19 @@ int main()
 Pointer to Pointer
 =======
 ```
+Example 1.
+int x= 5;
+int *p  &x;
+*p = 6;
+int**q = &p;
+int*** r = &q;
+print *p, *q, **qm **r, ***r //  6, xxxxx64,6,xxxxx64,6 respectively
+***r= 10;
+print x // 10
+**q = *p +2;
+print x // 12
+
+//Example 2.
 int num=123;
 /*A normal pointer pr2*/
 int *pr2;
