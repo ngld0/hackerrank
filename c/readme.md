@@ -106,6 +106,20 @@ int main() {
   distances d1, d2;
 }
 ```
+## macro
+```
+#define c 299792458
+#define circleArea(r) (3.1415*(r)*(r))
+#if expression
+    // conditional codes if expression is non-zero
+#elif expression1
+    // conditional codes if expression is non-zero
+#elif expression2
+    // conditional codes if expression is non-zero
+#else
+    // conditional if all expressions are 0
+#endif
+```
 ## union
 ```
 A union is a user-defined type similar to structs in C except for one key difference. 
