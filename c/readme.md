@@ -74,6 +74,7 @@ application's memory
 ```
 
 ## Dynamic Memory Allocation
+``` 
 - malloc()  stands for memory allocation.
     - ptr = (castType*) malloc(size); 
 - calloc()  stands for contiguous allocation.
@@ -82,3 +83,4 @@ application's memory
     - free(ptr);
 - realloc() If the dynamically allocated memory is insufficient or more than required, you can change the size of previously allocated memory by using realloc
     - ptr = realloc(ptr, x);
+``` 
