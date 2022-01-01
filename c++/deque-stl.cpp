@@ -7,7 +7,7 @@ void printKMax(int arr[], int n, int k){
     if(n < k) return;
     deque<int > ans(k);
     for(int i =0 ; i < n;i++){
-        // init k size element of queue
+        // init first element of queue
         if (ans.empty()){
             ans.push_back(i);
         }
