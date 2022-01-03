@@ -26,13 +26,13 @@ int surfaceArea(vector<vector<int>> A) {
             s += A[i][j] * 4;
         }
     }
-    // s is total, then we have to decrease the surfaces that we dont see
+    // s is total, then we have to decrease the surfaces that we dont see in the left of a cell 
     for (int i = 0; i < h; i++) {
         for (int j = 1; j < w; j++) {
             s -= min(A[i][j-1], A[i][j]) * 2;
         }
     }
-    
+    // remove the surfaces in the bottom of a cell
     for (int i = 1; i < h; i++) {
         for (int j = 0; j < w; j++) {
             s -= min(A[i-1][j], A[i][j]) * 2;
