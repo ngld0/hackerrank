@@ -8,7 +8,11 @@ public:
     HotelRoom(int bedrooms, int bathrooms) 
     : bedrooms_(bedrooms), bathrooms_(bathrooms) {
     }
-    
+    /*
+    sol 1.
+    bcz the child class is implement get_price so in the parent class we should define get_price is virtual function
+    virtual int get_price(){
+    */
     int get_price() {
         
         return 50*bedrooms_ + 100*bathrooms_;
@@ -20,7 +24,9 @@ private:
 
 class HotelApartment : public HotelRoom {
 public:
-    /*HotelApartment(int bedrooms, int bathrooms) 
+    /*
+    sol 2.
+    HotelApartment(int bedrooms, int bathrooms) 
     : HotelRoom(bedrooms, bathrooms) {}
     =>> change to 
     HotelApartment(int bedrooms, int bathrooms) 
