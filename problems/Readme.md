@@ -1,5 +1,5 @@
 # Solutions to solve hackerrank problems
-## Compatitive Programming - C++ IO faster:
+## Competitive Programming - C++ IO faster:
 
 ```
 // add the following code into your program
