@@ -12,7 +12,12 @@ vector<string> split(const string &);
  * The function is expected to return an INTEGER.
  * The function accepts INTEGER_ARRAY a as parameter.
  */
-
+/*
+bcz all element are duplicated, just one is single! 
+We can use xor bit, 
+exmple: 
+5(101) ^ 5(101) ^ 2(010)= 2
+*/
 int lonelyinteger(vector<int> a) {
     int ans  = 0;
     for(auto it : a){
