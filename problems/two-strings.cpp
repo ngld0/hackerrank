@@ -15,7 +15,6 @@ string rtrim(const string &);
  */
 
 string twoStrings(string s1, string s2) {
-    vector<char> ss1;
     for(char c:s1){
         
         if(s2.find(c)!= string::npos) return "YES";
