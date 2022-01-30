@@ -19,12 +19,13 @@ string larrysArray(vector<int> A) {
         
         for(int j = i+1;j< A.size();j++){
             if(A[i] > A[j]){
-                rotate +=1;
+                rotate +=1; // permutation time
             }
         }
     }
     return rotate %2 == 0 ? "YES":"NO";
     /*
+    assuming var rotate equals to permutation times.
     312 rotate = 2 //    312 -> 123 = sorted!
 
     231 rotate = 2 // 231 -> 312 -> 123 = sorted!
